@@ -37,6 +37,9 @@ function HomePage() {
             <Button variant="destructive" onClick={logout}>
               Logout
             </Button>
+            <Link to="/write">
+              <Button>Create Blog</Button>
+            </Link>
           </div>
         ) : (
           <div>
