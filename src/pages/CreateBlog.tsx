@@ -17,15 +17,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { axiosInstance } from "@/lib/axios";
 import { createBlogSchema, type CreateBlogSchema } from "@/schema/createBlog";
+import type { ResponseFileService } from "@/types/backendless";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
-
-interface ResponseFileService {
-  fileURL: string;
-  filePath: string;
-}
 
 function CreateBlog() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
