@@ -7,11 +7,12 @@ import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import LoginPageDaniel from "./pages/LoginPageDaniel";
 import HomePage from "./pages/HomePage";
+import BlogDetail from "./pages/BlogDetail";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>,
+    element: <HomePage />,
   },
   {
     path: "/register",
@@ -25,8 +26,10 @@ const router = createBrowserRouter([
     path: "/login2",
     element: <LoginPageDaniel />,
   },
-
-  
+  {
+    path: "/blogs/:objectId",
+    element: <BlogDetail />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
