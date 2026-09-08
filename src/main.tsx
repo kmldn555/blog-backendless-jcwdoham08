@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage";
 import LoginPageDaniel from "./pages/LoginPageDaniel";
 import HomePage from "./pages/HomePage";
 import BlogDetail from "./pages/BlogDetail";
+import CreateBlog from "./pages/CreateBlog";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/blogs/:objectId",
     element: <BlogDetail />,
+  },
+  {
+    path: "/write",
+    element: <CreateBlog />,
   },
 ]);
 

@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { axiosInstance } from "@/lib/axios";
-import { createBlogSchema, type CreateBlogSchema } from "@/schemas/createBlog";
+import { createBlogSchema, type CreateBlogSchema } from "@/schema/createBlog";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
@@ -229,7 +229,8 @@ function CreateBlog() {
               Reset
             </Button>
             <Button type="submit" form="form-create-blog" disabled={isLoading}>
-              {isLoading ? "Loading" : "Submit"}
+              {isLoading ? "Loading" : "Submit"}{" "}
+              {/* buat atur perubahan button */}
             </Button>
           </Field>
         </CardFooter>
